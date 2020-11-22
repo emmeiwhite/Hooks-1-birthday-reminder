@@ -17,7 +17,9 @@ export default function BirthdayCardList() {
       {list.map((list) => (
         <BirthdayCard {...list} />
       ))}
-      <CustomButton className="clear-button">Clear All</CustomButton>
+      <CustomButton className="clear-button" handleClick={handleClick}>
+        Clear All
+      </CustomButton>
     </div>
   );
 }
